@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    background-color: $main-color;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &-logo {
+        width: 122px;
+        height: 32px;
+        object-fit: contain;
+    }
+
+    &-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 0 48px;
+    }
+
+    &-item {
+        position: relative;
+    }
+
+    &-link {
+        display: block;
+        color: $text-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.active::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border: 2px solid $black-color;
+            padding: 20px 50px;
+            border-radius: 32px;
+        }
+    }
+}

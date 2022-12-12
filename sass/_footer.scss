@@ -1,0 +1,138 @@
+.footer {
+    background-color: $black-color;
+    padding-top: 60px;
+
+    &-top {
+        display: flex;
+        padding-bottom: 70px;
+    }
+
+    &-logo {
+        display: flex;
+
+        & img {
+            width: 220px;
+            height: 58px;
+            object-fit: cover;
+        }
+    }
+
+    &-column {
+        color: $white-color;
+    }
+
+    &-column:first-child {
+        margin-right: auto;
+    }
+
+    &-links {
+        min-width: 220px;
+        padding: 0 20px;
+        list-style: none;
+    }
+
+    &-link {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        line-height: calc(24/16);
+
+        & span {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background-color: $main-color;
+            margin-right: 8px;
+        }
+
+        & a {
+            display: inline-block;
+            color: $white-color;
+            transition: all linear 0.2s;
+        }
+
+        & a:hover {
+            color: $main-color;
+        }
+    }
+
+    &-contact {
+        display: flex;
+        padding: 0 20px;
+        margin-bottom: 24px;
+
+        & i {
+            padding-top: 4px;
+            width: 16px;
+            height: 24px;
+            margin-right: 16px;
+        }
+
+        & p {
+            line-height: calc(24/16);
+        }
+
+        & a {
+            color: $white-color;
+            display: block;
+        }
+    }
+
+    &-socials {
+        display: flex;
+        list-style: none;
+        padding-left: 52px;
+        gap: 0 16px;
+    }
+
+    &-social {
+        & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid $black-light-color;
+            border-radius: 100rem;
+            color: $white-color;
+            transition: all linear 0.2s;
+        }
+
+        & a:hover {
+            background-color: $main-color;
+            border-color: $main-color;
+            color: $black-color;
+        }
+    }
+
+    &-divide {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $gray-color;
+        margin-bottom: 32px;
+    }
+
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        height: 54px;
+
+        & p,
+        & a {
+            color: $white-color;
+            transition: all linear 0.2s;
+        }
+
+        & a:first-child {
+            margin-right: 32px;
+        }
+
+        & a:hover {
+            color: $main-color;
+        }
+    }
+}

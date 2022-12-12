@@ -1,0 +1,50 @@
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: $main-color;
+
+    &-content {
+        min-width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+
+    &-heading {
+        min-width: 710px;
+        font-size: 64px;
+        font-weight: 400;
+
+        & span {
+            display: block;
+        }
+    }
+
+    &-list {
+        display: flex;
+        padding: 0 12px;
+        margin: 0;
+        list-style-type: none;
+        gap: 0 26px;
+    }
+
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        background-color: $white-color;
+        padding: 35px;
+        border: 1px solid $black-color;
+        box-shadow: 2px 2px 0 $black-color;
+        border-radius: 15px;
+    }
+
+    &-list + &-list {
+        margin-top: 32px;
+    }
+}

@@ -1,0 +1,89 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 115px 0 70px;
+    background-color: $main-color;
+    min-height: 90vh;
+
+    &-container {
+        padding: 0 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-content {
+        width: 65%;
+        flex-shrink: 0;
+    }
+
+    &-subheading {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    &-heading {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: calc(60/50);
+        letter-spacing: 1px;
+
+        & span {
+            display: block;
+            position: relative;
+
+            &:first-child::after {
+                content: '';
+                display: block;
+                background-image: url('../images/hero-arrow.gif');
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: -20px;
+                right: 32%;
+                width: 50px;
+                height: 50px;
+                z-index: 1;
+            }
+
+            &:last-child::before {
+                content: '';
+                display: block;
+                background-image: url('../images/hero-star.gif');
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: -6px;
+                right: 19%;
+                width: 24px;
+                height: 24px;
+                z-index: 1;
+            }
+
+            &:last-child::after {
+                content: '';
+                display: block;
+                background-image: url('../images/hero-heart.gif');
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                bottom: -16px;
+                right: 10%;
+                width: 100px;
+                height: 100px;
+                z-index: 1;
+            }
+        }
+    }
+
+    &-video {
+        user-select: none;
+        position: relative;
+        width: 35%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
