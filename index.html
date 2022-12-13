@@ -23,38 +23,96 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <img srcset="./images/viivue-logo.svg 2x" alt="Viivue logo" class="header-logo">
-            <ul class="header-menu">
-                <li class="header-item">
-                    <a href="#" class="header-link active">
-                        Home
+            <div class="header-main">
+                <img srcset="./images/viivue-logo.svg 2x" alt="Viivue logo" class="header-logo">
+                <ul class="header-nav">
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link">
+                            Work
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link">
+                            Expertise
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link">
+                            About
+                        </a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#" class="header-nav__link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-control">
+                    <a href="#" class="header-btn btn btn-outline btn-shadow">
+                        Get a free consultation
                     </a>
-                </li>
-                <li class="header-item">
-                    <a href="#" class="header-link">
-                        Work
-                    </a>
-                </li>
-                <li class="header-item">
-                    <a href="#" class="header-link">
-                        Expertise
-                    </a>
-                </li>
-                <li class="header-item">
-                    <a href="#" class="header-link">
-                        About
-                    </a>
-                </li>
-                <li class="header-item">
-                    <a href="#" class="header-link">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-            <div class="header-control">
-                <a href="#" class="header-btn btn btn-outline btn-shadow">
-                    Get a free consultation
-                </a>
+                    <div class="header-toggle">
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav-mobile">
+                <div class="header-nav-mobile__content">
+                    <ul class="header-nav-mobile__list">
+                        <li class="header-nav-mobile__item">
+                            <a href="#" class="active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header-nav-mobile__item">
+                            <a href="#">
+                                Work
+                            </a>
+                        </li>
+                        <li class="header-nav-mobile__item">
+                            <a href="#">
+                                Expertise
+                            </a>
+                        </li>
+                        <li class="header-nav-mobile__item">
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+                        <li class="header-nav-mobile__item">
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="header-nav-mobile__item">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header-nav-mobile__socials">
+                        <li class="header-nav-mobile__social">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="header-nav-mobile__social">
+                            <a href="#">
+                                <i class="fa-brands fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li class="header-nav-mobile__social">
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-nav-mobile__overlay"></div>
             </div>
         </header>
 
@@ -67,15 +125,11 @@
                                 A web development and web design company
                             </h4>
                             <h1 class="hero-heading heading">
-                                <span>
-                                    Specialized in creating impactful website and ecommerce with
-                                </span>
-                                <span>
-                                    personality and drive results for forward-thinking businesses
-                                </span>
+                                Specialized in creating <span>impactful</span> website and ecommerce with
+                                personality and drive <span>results</span> for forward-thinking <span>businesses</span>
                             </h1>
                         </div>
-                        <video class="hero-video" loop muted>
+                        <video class="hero-video" loop autoplay muted>
                             <source src="./videos/hero-video.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -563,15 +617,9 @@
                 <div class="container">
                     <div class="brand-content">
                         <h1 class="brand-heading">
-                            <span>
-                                We help brands like
-                            </span>
-                            <span>
-                                yours elevate their online
-                            </span>
-                            <span>
-                                presence
-                            </span>
+                            We help brands like
+                            yours elevate their online
+                            presence
                         </h1>
                         <div class="brand-image">
                             <img src="./images/brand-image.svg" alt="">
@@ -684,13 +732,13 @@
                                 <i class="fa-solid fa-location-dot"></i>
                                 <p>
                                     Office
-                                    <br/>
+                                    <br />
                                     5th Floor – Robot Tower
-                                    <br/>
+                                    <br />
                                     308 – 308C Dien Bien Phu Street,
-                                    <br/>
+                                    <br />
                                     Ward 4, District 3, Ho Chi Minh City,
-                                    <br/>
+                                    <br />
                                     Vietnam
                                 </p>
                             </div>
@@ -740,7 +788,7 @@
 
         <div class="help-btn">
             <i class="fa-regular fa-circle-question"></i>
-            Help
+            <span>Help</span>
         </div>
     </div>
 

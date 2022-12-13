@@ -22,6 +22,7 @@
         font-weight: 500;
         text-transform: uppercase;
         font-size: 14px;
+        line-height: 1.5;
         margin-bottom: 20px;
     }
 
@@ -31,51 +32,54 @@
         line-height: calc(60/50);
         letter-spacing: 1px;
 
-        & span {
-            display: block;
+        &>span {
+            display: inline-block;
             position: relative;
+        }
 
-            &:first-child::after {
-                content: '';
-                display: block;
-                background-image: url('../images/hero-arrow.gif');
-                background-repeat: no-repeat;
-                background-size: contain;
-                position: absolute;
-                top: -20px;
-                right: 32%;
-                width: 50px;
-                height: 50px;
-                z-index: 1;
-            }
+        &>span:nth-child(1)::before {
+            content: '';
+            display: block;
+            background-image: url('../images/hero-arrow.gif');
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            transform: translateX(-50%);
+        }
 
-            &:last-child::before {
-                content: '';
-                display: block;
-                background-image: url('../images/hero-star.gif');
-                background-repeat: no-repeat;
-                background-size: contain;
-                position: absolute;
-                top: -6px;
-                right: 19%;
-                width: 24px;
-                height: 24px;
-                z-index: 1;
-            }
+        &>span:nth-child(2)::before {
+            content: '';
+            display: block;
+            background-image: url('../images/hero-star.gif');
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: -6px;
+            right: 0;
+            width: 24px;
+            height: 24px;
+            z-index: 1;
+            transform: translateX(80%);
+        }
 
-            &:last-child::after {
-                content: '';
-                display: block;
-                background-image: url('../images/hero-heart.gif');
-                background-repeat: no-repeat;
-                background-size: contain;
-                position: absolute;
-                bottom: -16px;
-                right: 10%;
-                width: 100px;
-                height: 100px;
-                z-index: 1;
-            }
+        &>span:nth-child(3)::before {
+            content: '';
+            display: block;
+            background-image: url('../images/hero-heart.gif');
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            bottom: -16px;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            transform: translate(100%, 10px);
         }
     }
 
@@ -87,3 +91,45 @@
         object-position: center;
     }
 }
+
+@media screen and (max-width: 1023.98px) {
+    .hero {
+        &-container {
+            flex-direction: column-reverse;
+        }
+
+        &-content {
+            width: 100%;
+        }
+
+        &-heading {
+            font-size: 32px;
+        }
+
+        &-video {
+            width: 50%;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .hero {
+        &-container {
+            padding: 0 20px;
+        }
+
+        &-subheading {
+            font-size: 12px;
+        }
+
+        &-heading {
+            font-size: 30px;
+        }
+
+        &-video {
+            width: 90%;
+        }
+    }
+}
+

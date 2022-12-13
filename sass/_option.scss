@@ -24,10 +24,11 @@
 
     &-desc {
         margin-bottom: 35px;
+        text-align: center;
+        padding: 0 32px;
     }
 
     &-list {
-        max-width: 1160px;
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -36,6 +37,7 @@
     }
 
     &-item {
+        flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -47,7 +49,6 @@
             align-items: center;
             width: 215px;
             height: 215px;
-            margin: 0 32px 20px;
             background-image: url('../images/option-background.svg');
             background-repeat: no-repeat;
             background-position: center center;
@@ -66,6 +67,7 @@
             font-weight: 14px;
             text-align: center;
             line-height: calc(20/14);
+            padding: 0 16px;
         }
     }
 
@@ -96,3 +98,32 @@
         }
     }
 }
+
+@media screen and (max-width: 1023.98px) {
+    .option {
+        height: auto;
+        padding: 40px 0 60px;
+
+        &-heading {
+            font-size: 36px;
+        }
+
+        &-list {
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            flex: unset;
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .option { 
+        &-item {
+            width: 100%;
+        }
+    }
+}
+

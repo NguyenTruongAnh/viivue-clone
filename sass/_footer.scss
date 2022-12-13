@@ -136,3 +136,24 @@
         }
     }
 }
+
+@media screen and (max-width: 1023.98px) {
+    .footer {
+        padding: 60px 12px 0;
+    }
+
+    .footer-top {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-column:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+}
+

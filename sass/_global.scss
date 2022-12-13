@@ -40,6 +40,7 @@ body {
     background-color: $main-color;
     min-height: 40px;
     transition: all ease 0.3s;
+    text-align: center;
 
     &:hover {
         background-color: $white-color;
@@ -76,5 +77,22 @@ body {
     & i {
         font-size: 18px;
         padding-right: 8px;
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    .help-btn {
+        width: 48px;
+        height: 48px;
+        justify-content: center;
+
+        & i {
+            padding: 0;
+            font-size: 24px;
+        }
+
+        & span {
+            display: none;
+        }
     }
 }
