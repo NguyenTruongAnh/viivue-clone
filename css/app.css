@@ -345,6 +345,7 @@ body {
   padding: 115px 0 70px;
   background-color: #f5d00a;
   min-height: 90vh;
+  overflow-x: hidden;
 }
 .hero-container {
   padding: 0 35px;
