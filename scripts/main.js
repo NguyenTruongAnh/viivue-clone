@@ -36,7 +36,7 @@ ScrollTrigger.matchMedia({
                 trigger: '.work',
                 start: 'center center',
                 end: '200% top',
-                markers: true,
+                markers: false,
                 scrub: 1,
                 pin: true,
             }
@@ -50,7 +50,7 @@ ScrollTrigger.matchMedia({
                 trigger: '.work',
                 start: '50.1% center',
                 end: '400% top',
-                markers: true,
+                markers: false,
                 scrub: 1,
                 pin: true,
             }
