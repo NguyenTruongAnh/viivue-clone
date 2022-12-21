@@ -35,8 +35,8 @@ ScrollTrigger.matchMedia({
             scrollTrigger: {
                 trigger: '.work',
                 start: 'center center',
-                end: '400% top',
-                markers: false,
+                end: '200% top',
+                markers: true,
                 scrub: 1,
                 pin: true,
             }
@@ -44,9 +44,17 @@ ScrollTrigger.matchMedia({
             .from(".work-main__subheading", { y: "50%", opacity: 0 })
             .from(".work-main__heading", { y: "50%", opacity: 0 })
             .from(".work-main__btn", { y: "50%", opacity: 0 })
-            .to(".work-container", { x: `-${workElementWidth}` })
-            .to(".work-container", { x: `-${workElementWidth * 2.5}` })
-            .to(".work-container", { x: `-${workElementWidth * 3.5}` })
+            
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '.work',
+                start: '50.1% center',
+                end: '400% top',
+                markers: true,
+                scrub: 1,
+                pin: true,
+            }
+        })   
             .to(".work-container", { x: `-${workElementWidth * 4.3}` })
 
         // Option
